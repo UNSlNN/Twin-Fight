@@ -6,7 +6,7 @@ public class Bullet : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        DamageManager damageamount = FindObjectOfType<DamageManager>();
+        GameManager damageamount = FindObjectOfType<GameManager>();
 
         if (collision.gameObject.tag == "Player1")
         {
